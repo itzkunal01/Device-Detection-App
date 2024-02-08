@@ -3,21 +3,21 @@ import React, { useEffect } from "react";
 const DeviceDetectionApp = () => {
   useEffect(() => {
     const detectDeviceType = () => {
-      const isIOS =
+      const isIOSDevice =
         /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-      if (isIOS) {
+      if (isIOSDevice) {
         console.log("This is an iOS device.");
-        // or use
-        alert("This is an iOS device.");
+        // OR
+        alert(" this is am iOS device.");
       } else {
-        console.log("This is a non-iOS device (presumed Windows or other).");
-        // or use
+        console.log("This is  a non-iOS device (persumed Windows or other).");
+        // OR
         alert("This is a non-iOS device.");
       }
     };
 
-    // Initial check on mount
+    //   Initial Check On Mount
     detectDeviceType();
   }, []);
 
