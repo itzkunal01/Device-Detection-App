@@ -7,13 +7,19 @@ const DeviceDetectionApp = () => {
         /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
       if (isIOSDevice) {
-        console.log("This is an iOS device.");
+        console.log(
+          "%cThis is an iOS device.",
+          "color: green; font-size: 18px;"
+        );
         // OR
-        alert(" this is am iOS device.");
+        // alert(" this is an iOS device.");
       } else {
-        console.log("This is  a non-iOS device (persumed Windows or other).");
+        console.log(
+          "%cThis is a non-iOS device.",
+          "color: green; font-size: 18px;"
+        );
         // OR
-        alert("This is a non-iOS device.");
+        //   alert("This is a non-iOS device.");
       }
     };
 
