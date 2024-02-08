@@ -162,21 +162,21 @@ const DeviceDetectionApp = () => {
           "color: green; font-size: 18px;"
         );
         // OR
-        // alert("This is an iOS device , method 6");
+        alert("This is an iOS device , method 6");
       } else if (isMacOS) {
         console.log(
           "%cThis is a macOS device , method 6",
           "color: green; font-size: 18px;"
         );
         // OR
-        // alert("This is a macOS device , method 6");
+        alert("This is a macOS device , method 6");
       } else {
         console.log(
           "%cThis is not an iOS or macOS device , method 6",
           "color: green; font-size: 18px;"
         );
         // OR
-        // alert("This is not an iOS or macOS device , method 6");
+        alert("This is not an iOS or macOS device , method 6");
       }
     };
 
