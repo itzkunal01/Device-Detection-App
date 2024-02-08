@@ -23,7 +23,7 @@ const DeviceDetectionApp = () => {
 
   return (
     <>
-      <div className="container my-5">
+      <div className="container my-5 bg-light">
         <header className="text-center mb-4">
           <h1 className="display-4">Device Type Detection</h1>
         </header>
