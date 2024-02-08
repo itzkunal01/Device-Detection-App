@@ -1,31 +1,57 @@
-import React, { useEffect } from "react";
+import React from "react";
+// import { isIOS } from "react-device-detect";
 
 const DeviceDetectionApp = () => {
-  useEffect(() => {
-    const detectDeviceType = () => {
-      const isIOSDevice =
-        /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  // ========== METHOD 1 ==========
+  //   React.useEffect(() => {
+  //     const detectDeviceType = () => {
+  //       const isIOSDevice =
+  //         /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-      if (isIOSDevice) {
-        console.log(
-          "%cThis is an iOS device.",
-          "color: green; font-size: 18px;"
-        );
-        // OR
-        // alert(" this is an iOS device.");
-      } else {
-        console.log(
-          "%cThis is a non-iOS device.",
-          "color: green; font-size: 18px;"
-        );
-        // OR
-        //   alert("This is a non-iOS device.");
-      }
-    };
+  //       if (isIOSDevice) {
+  //         console.log(
+  //           "%cThis is an iOS device.",
+  //           "color: green; font-size: 18px;"
+  //         );
+  //         // OR
+  //         // alert(" this is an iOS device.");
+  //       } else {
+  //         console.log(
+  //           "%cThis is a non-iOS device.",
+  //           "color: green; font-size: 18px;"
+  //         );
+  //         // OR
+  //         //   alert("This is a non-iOS device.");
+  //       }
+  //     };
 
-    //   Initial Check On Mount
-    detectDeviceType();
-  }, []);
+  //     //   Initial Check On Mount
+  //     detectDeviceType();
+  //   }, []);
+
+  // ========== METHOD 2 ==========
+  //   React.useEffect(() => {
+  //     const detectDeviceType = () => {
+  //       if (isIOS) {
+  //         console.log(
+  //           "%cThis is an iOS device.....",
+  //           "color: green; font-size: 18px;"
+  //         );
+  //         // OR
+  //         // alert("This is an iOS device.");
+  //       } else {
+  //         console.log(
+  //           "%cThis is a non-iOS device.....",
+  //           "color: green; font-size: 18px;"
+  //         );
+  //         // OR
+  //         // alert("This is a non-iOS device.");
+  //       }
+  //     };
+
+  //     // Initial Check On Mount
+  //     detectDeviceType();
+  //   }, []);
 
   return (
     <>
